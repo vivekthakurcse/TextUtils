@@ -8,25 +8,27 @@
         <title>TextUtils</title>
     </head>
     <body>
+        
+        <!--------- MAIN BOX  ---------->
         <div class="main">
             <h4>Enter any text to analyze </h4>
-
             <input type="text" name="text" id="text" />
-
             <div class="btn-box">
                 <select id="operation">
-                    <option value="cp">Capitalize</option>
-                    <option value="lw">Lowercase</option>
-                    <option value="wc">Words Count</option>
-                    <option value="tr">Remove extra spaces</option>
+                        <option value="cp">Capitalize</option>
+                        <option value="lw">Lowercase</option>
+                        <option value="wc">Words Count</option>
+                        <option value="tr">Remove extra spaces</option>
                 </select>
-                <button onclick="Analyse()">Analyze</button>
+                <button onclick="Analyse()" id="btn">Analyze</button>
             </div>
-            <!-- result -->
+            <!------- result -------->
             <div id="result">
                 <span style="opacity: 0.5">Analyzed Text'll be shown here</span>
             </div>
         </div>
+        
+        
         <script src="./src/app.js"></script>
     </body>
 </html>

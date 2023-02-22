@@ -8,16 +8,19 @@ function Analyse() {
     const operation = document.getElementById("operation");
     const todo = operation.options[operation.selectedIndex].value;
     const result = document.getElementById("result");
+    const btn = document.getElementById("btn");
 
     if (todo == "cp") {
     
         const result1 = text.value.toUpperCase();
         result.innerHTML = "On Result : " + result1;
+        btn.innerHTML = 'Capitalize';
         
     } else if (todo == "lw") {
     
         const result2 = text.value.toLowerCase();
         result.innerHTML = "On Result : " + result2;
+        btn.innerHTML = 'to Lower';
         
     } else if (todo == "wc") {
     
@@ -25,11 +28,13 @@ function Analyse() {
         const wordCount = result3.split(/\s+/).length;
         result.innerHTML = "Words Count = " + wordCount;
         // result.innerHTML = result3.length();
+        btn.innerHTML = 'Word Count';
         
     } else if (todo == "tr") {
     
         const result4 = text.value.trim();
         result.innerHTML = "Text without extra spaces : " + result4;
+        btn.innerHTML = 'Trim Spaces';
         
     }
 }

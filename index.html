@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" href="./src/icon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="./src/app.css" />
+        <title>TextUtils</title>
+    </head>
+    <body>
+        <div class="main">
+            <h4>Enter any text to analyze </h4>
+
+            <input type="text" name="text" id="text" />
+
+            <div class="btn-box">
+                <select id="operation">
+                    <option value="cp">Capitalize</option>
+                    <option value="lw">Lowercase</option>
+                    <option value="wc">Words Count</option>
+                    <option value="tr">Remove extra spaces</option>
+                </select>
+                <button onclick="Analyse()">Analyze</button>
+            </div>
+            <!-- result -->
+            <div id="result">
+                <span style="opacity: 0.5">Analyzed Text'll be shown here</span>
+            </div>
+        </div>
+        <script src="./src/app.js"></script>
+    </body>
+</html>
